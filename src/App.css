@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #e9d2bf;
+}
+h1{
+  text-align: center;
+  margin: 40px auto;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #e9d2bf;
+  box-shadow: 0px 0px 20px grey;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 35px;
+}
+h1:hover{
+  transition: all 0.7s ease-in;
+  color: #ef9067;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+button{
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+button::first-letter{
+  text-transform: uppercase;
+}
+button:hover{
+  transition: all 0.5s ease-in;
+  background-color: #ef9067;
+  color: #ffffff;
+  cursor: pointer;
+}
+.card-main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.cards{
+  width: 250px;
+  height: auto;
+  /* text-align: center; */
+  position:relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.title{
+  position: absolute;
+  top: 0px;
+  background-color: #1b020bc9;
+  transform: translateX(-101%);
+  border-radius: 15px;
+  z-index: 1;
+  height: auto;
+  color: white;
+  width: 100%;
+  padding: 10px
+}
+.price{
+  position: absolute;
+  z-index: 2;
+  top: 175px;
+  left: 90px;
+  background-color: #1b020bc9;
+  display: inline;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+.Card{
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 20px grey;
+  border-radius: 15px;
+  
+}
+.Card:hover{
+  transition: all 0.7s ease;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.cards:hover .title{
+  transition: all 1s ease;
+  transform: translateX(0%);
+}
+.infor{
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  border-radius: 50px;
+  bottom: 0
+}
+button:focus:not(.infor){
+  background-color: #ef9067;
+  color: #ffffff;
+}
+.Card p{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 4;
+}
